@@ -3,7 +3,6 @@ class Filt < Formula
   homepage "https://github.com/VVain716/filt"
   url "https://github.com/VVain716/filt/archive/refs/tags/v1.0.0.tar.gz"
   sha256 "240cd166e66ac19c7784e24858f4bd8719bf0b78942bdf7651270f8914fbb1f1"
-  license "MIT" # Replace with your actual license
 
   # depends_on "cmake" => :build
 
@@ -12,7 +11,7 @@ class Filt < Formula
     # prefix.install "filter"
 
     # By default, install to the standard prefix (e.g., /usr/local)
-    bin.install "filter"
+    bin.install "/Users/vedvainateya/c/cPrograms/filt/filter"
   end
 
   test do
