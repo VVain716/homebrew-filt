@@ -1,16 +1,21 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Filt < Formula
-  desc ""
-  homepage ""
+  desc "Apply a filter on bmp images"
+  homepage "https://github.com/VVain716/filt"
   url "https://github.com/VVain716/filt/archive/refs/tags/v1.0.0.tar.gz"
   sha256 "240cd166e66ac19c7784e24858f4bd8719bf0b78942bdf7651270f8914fbb1f1"
-  license ""
+  license "MIT" # Replace with your actual license
 
   # depends_on "cmake" => :build
 
   def install
+    # If you want to install to a different prefix, you can use:
+    # prefix.install "filter"
+
+    # By default, install to the standard prefix (e.g., /usr/local)
     bin.install "filter"
+  end
+
+  test do
+    # Add your formula's test here if applicable
   end
 end
