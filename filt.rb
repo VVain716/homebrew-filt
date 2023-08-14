@@ -7,11 +7,11 @@ class Filt < Formula
   # depends_on "cmake" => :build
 
   def install
-    # If you want to install to a different prefix, you can use:
-    # prefix.install "filter"
+    # Extract the tar.gz file
+    system "tar", "xf", "v1.0.0.tar.gz"
 
-    # By default, install to the standard prefix (e.g., /usr/local)
-    bin.install "/Users/vedvainateya/c/cPrograms/filt/filter"
+    # Move the executable to the bin directory
+    bin.install "filt-1.0.0/filter" => "filt"
   end
 
   test do
